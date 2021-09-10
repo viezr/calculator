@@ -1,0 +1,200 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffbf00;
+    --green: #2db94d;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --white: #fff;
+    --black: #000;
+
+    --gray: #888;
+    --gray-mid: #bfbfbf;
+    --gray-light: #f2f2f2;
+
+    --red-text: #721c24;
+    --red-bg: #f8d7da;
+    --red-br: #f5c6cb;
+
+    --yellow-text: #856404;
+    --yellow-bg: #cc9900;
+    --yellow-flash-bg: #fff3cd;
+    --yellow-br: #ffeeba;
+
+    --cyan-text: #0c5460;
+    --cyan-bg: #d1ecf1;
+    --cyan-br: #bee5eb;
+
+    --green-text: #155724;
+    --green-bg: #23903c;
+    --green-flash-bg: #d4edda;
+    --green-br: #c3e6cb;
+
+    --blue-bg: #0063cc;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    background-color: #222;
+    background-color: var(--gray-light);
+    color: var(--dark);;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.main {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.info {
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+
+    font-size: 0.8em;
+    text-align: center;
+}
+.calc-main {
+    max-width: 320px;
+    padding: 20px;
+    margin: auto;
+
+    background-color: var(--gray-mid);
+    color: #000;
+    border: 1px solid transparent;
+    border-radius: .45rem;
+}
+
+.calc-display {
+    padding: 0 10px;
+    margin: 0 4px;
+
+    background-color: var(--white);
+    text-align: right;
+    border: 1px solid transparent;
+    border-radius: .45rem;
+}
+.calc-display-result {
+    height: 56px;
+    overflow: hidden;
+    
+
+    font-size: 2.2em;
+    font-weight: bold;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.calc-display-history {
+    height: 32px;
+
+    color: #666;
+}
+
+.calc-display-history-mem {
+    display: inline-block;
+    width: 28%;
+    overflow: hidden;
+
+    color: var(--yellow-bg);
+    text-align: left;
+}
+
+.calc-display-history-main {
+    display: inline-block;
+    width: 69%;
+    overflow: hidden;
+
+    text-align: right;
+}
+
+.calc-buttons-top, .calc-buttons-main {
+    margin: 10px 0;
+
+    text-align: center;
+}
+
+.calc-btn {
+    display: inline-block;
+    width: 18%;
+    height: 40px;
+    margin: 2px;
+
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+
+    text-align: center;
+    transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.calc-btn:active {
+    box-shadow: 1px #666;
+    transform: scale(0.95, 0.95);
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--blue-bg);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-bg);
+}
+
+.btn-warning {
+    color: var(--yellow-text);
+    background-color: var(--yellow);
+    border-color: var(--yellow-bg);
+}
+
+.btn-warning:hover {
+    background-color: var(--yellow-bg);
+}
+
+.btn-success {
+    color: var(--green-text);
+    background-color: var(--green);
+    border-color: var(--green-bg);
+}
+.btn-success:hover {
+    background-color: var(--green-bg);
+}
