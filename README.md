@@ -1,4 +1,4 @@
-# Calendar
+# Calculator
 ![image](screenshot.png)
 
 Calculator, written in Javascript.
